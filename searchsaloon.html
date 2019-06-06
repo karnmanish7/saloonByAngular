@@ -1,0 +1,20 @@
+<div class="saloon">
+        <div class="otherRow">
+          <div class="saloonWrap">
+            <div class="row">
+              <h5>Search by saloon name</h5>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="enter saloon name" aria-label=""
+                  aria-describedby="saloonName" [(ngModel)]="saloonName">
+                <div class="input-group-append">
+                  <button class="btn btn-success" type="button" (click)="searchSaloonName()">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row addSaloon">
+                <a [routerLink]="['/home/addsaloon']">Add Saloon</a>
+              </div>
+            </div>
