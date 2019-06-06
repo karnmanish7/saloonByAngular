@@ -19,7 +19,7 @@ export class SearchSaloon{
       this.saloonService.searchSaloon(this.saloonName).subscribe(response =>
         console.log(JSON.stringify(response))
       );
-      this.router.navigate(['/home/saloon/' + this.saloonName]);
+      //this.router.navigate(['/home/saloon/' + this.saloonName]);
     }
   
 
